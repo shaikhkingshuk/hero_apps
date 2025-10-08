@@ -15,8 +15,8 @@ const TrendingApps = ({ data }) => {
           </p>
         </div>
       </div>
-      <div>
-        <div className="grid grid-cols-4 gap-[20px] mx-[80px]">
+      <div className="flex justify-center">
+        <div className="grid grid-cols-4 gap-[20px] max-w-[1440px] w-full ">
           {data.map((val) => (
             <SingleApp val={val}></SingleApp>
           ))}
@@ -24,7 +24,7 @@ const TrendingApps = ({ data }) => {
       </div>
       <div className="flex justify-center items-center mt-[40px] mb-[80px]">
         <Link
-          to=""
+          to="/allApps"
           className="border-none btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-[16px]"
         >
           Show All

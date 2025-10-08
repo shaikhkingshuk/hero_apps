@@ -3,7 +3,7 @@ import React from "react";
 const SingleApp = ({ val }) => {
   console.log(val);
   return (
-    <div className="h-[435px] w-[320px]  flex flex-col bg-white p-[10px] shadow-lg rounded-xl">
+    <div className=" h-full  w-full  flex flex-col bg-white p-[10px] shadow-lg rounded-xl ">
       <div className=" h-full w-full  bg-[#E9E9E9]">
         <img
           src={val.image}
