@@ -1,8 +1,13 @@
 import React from "react";
+import AppDetails from "./AppDetails";
+import { Link } from "react-router";
 
 const SingleApp = ({ val }) => {
   return (
-    <div className=" h-full  w-full  flex flex-col bg-white p-[10px] shadow-lg rounded-xl ">
+    <Link
+      to={`/allApps/app_details/${val.id}`}
+      className=" h-full  w-full  flex flex-col bg-white p-[10px] shadow-lg rounded-xl  "
+    >
       <div className=" h-full w-full  bg-[#E9E9E9]">
         <img
           src={val.image}
@@ -24,7 +29,7 @@ const SingleApp = ({ val }) => {
           {val.ratingAvg}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
