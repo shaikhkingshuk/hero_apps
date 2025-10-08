@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -30,30 +30,72 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-[16px] font-medium"
           >
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#632EE3] underline" : ""
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/">Apps</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#632EE3] underline" : ""
+                }
+              >
+                Apps
+              </NavLink>
             </li>
             <li>
-              <Link to="/">Installation</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#632EE3] underline" : ""
+                }
+              >
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">
-          <img src="/logo.png" className="h-[25px]"></img> HERO.IO
+          <img src="/images/logo.png" className="h-[25px]"></img> HERO.IO
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[16px] font-medium">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#632EE3] underline" : ""
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/">Apps</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#632EE3] underline" : ""
+              }
+            >
+              Apps
+            </NavLink>
           </li>
           <li>
-            <Link to="/">Installation</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#632EE3] underline" : ""
+              }
+            >
+              Installation
+            </NavLink>
           </li>
         </ul>
       </div>

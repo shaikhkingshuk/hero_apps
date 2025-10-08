@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "image": "/images/chatgpt.png",
+    "description": "ChatGPT is a cutting-edge AI chatbot developed by OpenAI, designed to assist users with a wide range of tasks. From answering questions and providing recommendations to generating creative content, ChatGPT leverages advanced natural language processing to deliver human-like interactions. Its versatility makes it a valuable tool for both personal and professional use.\n\nWhether you're seeking information, brainstorming ideas, or simply engaging in casual conversation, ChatGPT offers a seamless and intuitive experience. Its ability to understand context and provide relevant responses sets it apart in the realm of AI-powered applications.",
+    "size": 100,
+    "reviews": 500000,
+    "shortReview": "500k",
+    "ratingAvg": 4.8,
+    "downloads": 50000000,
+    "shortDownload": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 325000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "image": "/images/tiktok.png",
+    "description": "TikTok is a dynamic social media platform that allows users to create and share short-form videos. With its user-friendly interface and a vast library of music and effects, TikTok has become a global sensation, enabling users to express their creativity and connect with a wide audience.\n\nThe app's algorithm curates a personalized feed, ensuring that users discover content tailored to their interests. From dance challenges and comedy skits to educational content and viral trends, TikTok offers a diverse range of videos that cater to all tastes.",
+    "size": 150,
+    "reviews": 600000,
+    "shortReview": "600k",
+    "ratingAvg": 4.7,
+    "downloads": 40000000,
+    "shortDownload": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 250000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Instagram",
+    "companyName": "Instagram, Inc.",
+    "image": "/images/instagram.jpg",
+    "description": "Instagram is a photo and video-sharing social networking service owned by Facebook. It allows users to upload photos and videos, which can be edited with filters and organized by hashtags and geographical tagging. Users can also view, like, and comment on posts shared by their friends on their feed.\n\nThe platform offers various features such as Stories, Reels, and IGTV, enabling users to share content in different formats. Instagram has become a hub for influencers, brands, and everyday users to connect and engage with a global audience.",
+    "size": 120,
+    "reviews": 550000,
+    "shortReview": "550k",
+    "ratingAvg": 4.6,
+    "downloads": 42000000,
+    "shortDownload": "42M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 230000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "image": "/images/whatsapp.jpg",
+    "description": "WhatsApp Messenger is a freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook. It allows users to send text messages, voice messages, images, and videos, as well as make voice and video calls over the internet.\n\nThe app uses end-to-end encryption to ensure the privacy and security of messages. WhatsApp has become one of the most popular messaging apps worldwide, offering a simple and reliable way for people to stay connected with friends and family.",
+    "size": 130,
+    "reviews": 700000,
+    "shortReview": "700k",
+    "ratingAvg": 4.8,
+    "downloads": 45000000,
+    "shortDownload": "45M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 560000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Telegram",
+    "companyName": "Telegram Messenger LLP",
+    "image": "/images/telegram.png",
+    "description": "Telegram is a cloud-based instant messaging, VoIP, and VoD service. It allows users to send messages and exchange photos, videos, stickers, audio, and files of any type. Telegram also provides end-to-end encrypted video calling, VoIP, and file sharing.\n\nThe app is known for its speed and security, offering a seamless messaging experience. Telegram's unique features include channels, groups, and bots, making it a versatile platform for both personal and professional communication.",
+    "size": 110,
+    "reviews": 450000,
+    "shortReview": "450k",
+    "ratingAvg": 4.7,
+    "downloads": 35000000,
+    "shortDownload": "35M",
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 320000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CapCut",
+    "companyName": "Byte, Inc.",
+    "image": "/images/capcut.png",
+    "description": "CapCut is a free all-in-one video editing app that helps you create incredible videos. It offers a variety of features including cutting, reversing, changing speed, adding music, and applying filters and effects to your videos.\n\nCapCut is designed to be user-friendly, making it accessible for both beginners and experienced video editors. Whether you're creating content for social media or personal projects, CapCut provides the tools you need to bring your vision to life.",
+    "size": 150,
+    "reviews": 600000,
+    "shortReview": "600k",
+    "ratingAvg": 4.6,
+    "downloads": 40000000,
+    "shortDownload": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 230000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Threads",
+    "companyName": "Instagram, Inc.",
+    "image": "/images/threads.jpg",
+    "description": "Threads is a text-based social media app developed by Instagram. It allows users to share short posts, follow friends, and engage in conversations. Threads is designed to be a more intimate and personal platform compared to traditional social media apps.\n\nThe app integrates seamlessly with Instagram, allowing users to share content across both platforms. Threads focuses on fostering meaningful connections and conversations, making it a unique addition to the social media landscape.",
+    "size": 120,
+    "reviews": 500000,
+    "shortReview": "500k",
+    "ratingAvg": 4.5,
+    "downloads": 38000000,
+    "shortDownload": "38M",
+    "ratings": [
+      { "name": "1 star", "count": 3500 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 240000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "image": "/images/snapchat.jpg",
+    "description": "Snapchat is a multimedia messaging app popular for its ephemeral nature. Users can send photos and videos that disappear after being viewed. The app also offers features like Stories, filters, and lenses, allowing users to express themselves creatively.\n\nSnapchat has evolved over the years, introducing new features such as Discover, Spotlight, and Snap Map, to keep users engaged and connected with friends and content from around the world.",
+    "size": 130,
+    "reviews": 550000,
+    "shortReview": "550k",
+    "ratingAvg": 4.4,
+    "downloads": 37000000,
+    "shortDownload": "37M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 220000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Google Gemini",
+    "companyName": "Google LLC",
+    "image": "/images/gemini.png",
+    "description": "Google Gemini is a powerful AI assistant designed to enhance productivity and creativity. With its advanced natural language processing capabilities, Gemini can assist users in tasks ranging from drafting emails and generating code to providing personalized recommendations. The app integrates seamlessly with Google's suite of services, including Gmail, Calendar, and Maps, offering a cohesive and efficient user experience.\n\nGemini's multimodal features allow users to interact through text, voice, and images, making it a versatile tool for various applications. Whether you're a professional seeking to streamline your workflow or an individual looking to manage daily tasks more effectively, Google Gemini offers a comprehensive solution to meet your needs.",
+    "size": 120,
+    "reviews": 450000,
+    "shortReview": "450k",
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "shortDownload": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 360000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "image": "/images/spotify.png",
+    "description": "Spotify is a leading music streaming platform that offers a vast library of songs, podcasts, and playlists. With its personalized recommendations and curated playlists, Spotify provides users with an unparalleled music experience. The app's intuitive interface allows users to easily discover new music, create custom playlists, and share their favorite tracks with friends.\n\nWhether you're commuting, working out, or relaxing at home, Spotify offers a soundtrack for every moment. With features like offline listening and cross-platform synchronization, users can enjoy their music seamlessly across devices.",
+    "size": 200,
+    "reviews": 800000,
+    "shortReview": "800k",
+    "ratingAvg": 4.7,
+    "downloads": 1000000000,
+    "shortDownload": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 780000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "image": "/images/youtube.png",
+    "description": "YouTube is the world's largest video-sharing platform, offering a diverse range of content from music videos and tutorials to vlogs and documentaries. Users can upload, view, and share videos, as well as interact with content creators through comments and likes. The app's algorithm provides personalized recommendations, ensuring that users discover content tailored to their interests.\n\nWith features like YouTube Premium, users can enjoy ad-free viewing, offline playback, and access to exclusive content. Whether you're looking to learn something new or just unwind with entertainment, YouTube has something for everyone.",
+    "size": 250,
+    "reviews": 900000,
+    "shortReview": "900k",
+    "ratingAvg": 4.6,
+    "downloads": 2000000000,
+    "shortDownload": "2B",
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 860000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "/images/facebook.jpg",
+    "description": "Facebook is a social networking platform that connects people with friends, family, and communities. Users can share updates, photos, and videos, as well as engage with content through likes, comments, and shares. The app's News Feed provides a personalized stream of posts, keeping users informed and entertained.\n\nWith features like Marketplace, Events, and Groups, Facebook offers a comprehensive platform for social interaction and discovery. Whether you're reconnecting with old friends or exploring new interests, Facebook provides the tools to stay connected and engaged.",
+    "size": 300,
+    "reviews": 1000000,
+    "shortReview": "1M",
+    "ratingAvg": 4.5,
+    "downloads": 3000000000,
+    "shortDownload": "3B",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "image": "/images/netflix.png",
+    "description": "Netflix is a subscription-based streaming service that offers a vast library of movies, TV shows, documentaries, and original content. With its user-friendly interface and personalized recommendations, Netflix provides an immersive viewing experience for users worldwide.\n\nThe app allows users to stream content in various genres and languages, catering to diverse tastes and preferences. Features like offline viewing and multiple user profiles enhance the flexibility and convenience of the service, making Netflix a go-to platform for entertainment.",
+    "size": 350,
+    "reviews": 1100000,
+    "shortReview": "1.1M",
+    "ratingAvg": 4.7,
+    "downloads": 4000000000,
+    "shortDownload": "4B",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 1075000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Amazon",
+    "companyName": "Amazon.com, Inc.",
+    "image": "/images/amazon.png",
+    "description": "Amazon is an e-commerce platform that offers a wide range of products, from electronics and clothing to groceries and books. Users can browse and purchase items, track orders, and manage their accounts through the app's intuitive interface.\n\nWith features like Amazon Prime, users can enjoy benefits such as free shipping, exclusive deals, and access to streaming services. The app's personalized recommendations and wish lists enhance the shopping experience, making it easier to find and purchase desired items.",
+    "size": 400,
+    "reviews": 1200000,
+    "shortReview": "1.2M",
+    "ratingAvg": 4.8,
+    "downloads": 5000000000,
+    "shortDownload": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 1180000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "image": "/images/uber.png",
+    "description": "Uber is a ride-hailing service that connects passengers with drivers through its mobile app. Users can request rides, track their driver's location, and make payments seamlessly within the app.\n\nIn addition to rides, Uber offers services like Uber Eats for food delivery and Uber Freight for logistics. The app's real-time tracking and fare estimation features enhance the convenience and reliability of the service, making it a popular choice for transportation needs.",
+    "size": 150,
+    "reviews": 1300000,
+    "shortReview": "1.3M",
+    "ratingAvg": 4.6,
+    "downloads": 6000000000,
+    "shortDownload": "6B",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 160000 },
+      { "name": "5 star", "count": 1280000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "image": "/images/airbnb.png",
+    "description": "Airbnb is a platform that allows users to book unique accommodations and experiences around the world. Whether you're looking for a cozy apartment in the city or a beachfront villa, Airbnb offers a diverse range of options to suit various preferences and budgets.\n\nThe app's user-friendly interface enables easy browsing, booking, and communication with hosts. Features like reviews, ratings, and detailed descriptions help users make informed decisions, ensuring a comfortable and memorable stay.",
+    "size": 100,
+    "reviews": 1400000,
+    "shortReview": "1.4M",
+    "ratingAvg": 4.7,
+    "downloads": 7000000000,
+    "shortDownload": "7B",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 1390000 }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "image": "/images/chatgpt.png",
+    "description": "ChatGPT is a cutting-edge AI chatbot developed by OpenAI, designed to assist users with a wide range of tasks. From answering questions and providing recommendations to generating creative content, ChatGPT leverages advanced natural language processing to deliver human-like interactions. Its versatility makes it a valuable tool for both personal and professional use.\n\nWhether you're seeking information, brainstorming ideas, or simply engaging in casual conversation, ChatGPT offers a seamless and intuitive experience. Its ability to understand context and provide relevant responses sets it apart in the realm of AI-powered applications.",
+    "size": 100,
+    "reviews": 500000,
+    "shortReview": "500k",
+    "ratingAvg": 4.8,
+    "downloads": 50000000,
+    "shortDownload": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 325000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "image": "/images/tiktok.png",
+    "description": "TikTok is a dynamic social media platform that allows users to create and share short-form videos. With its user-friendly interface and a vast library of music and effects, TikTok has become a global sensation, enabling users to express their creativity and connect with a wide audience.\n\nThe app's algorithm curates a personalized feed, ensuring that users discover content tailored to their interests. From dance challenges and comedy skits to educational content and viral trends, TikTok offers a diverse range of videos that cater to all tastes.",
+    "size": 150,
+    "reviews": 600000,
+    "shortReview": "600k",
+    "ratingAvg": 4.7,
+    "downloads": 40000000,
+    "shortDownload": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 250000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Instagram",
+    "companyName": "Instagram, Inc.",
+    "image": "/images/instagram.jpg",
+    "description": "Instagram is a photo and video-sharing social networking service owned by Facebook. It allows users to upload photos and videos, which can be edited with filters and organized by hashtags and geographical tagging. Users can also view, like, and comment on posts shared by their friends on their feed.\n\nThe platform offers various features such as Stories, Reels, and IGTV, enabling users to share content in different formats. Instagram has become a hub for influencers, brands, and everyday users to connect and engage with a global audience.",
+    "size": 120,
+    "reviews": 550000,
+    "shortReview": "550k",
+    "ratingAvg": 4.6,
+    "downloads": 42000000,
+    "shortDownload": "42M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 230000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "image": "/images/whatsapp.jpg",
+    "description": "WhatsApp Messenger is a freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook. It allows users to send text messages, voice messages, images, and videos, as well as make voice and video calls over the internet.\n\nThe app uses end-to-end encryption to ensure the privacy and security of messages. WhatsApp has become one of the most popular messaging apps worldwide, offering a simple and reliable way for people to stay connected with friends and family.",
+    "size": 130,
+    "reviews": 700000,
+    "shortReview": "700k",
+    "ratingAvg": 4.8,
+    "downloads": 45000000,
+    "shortDownload": "45M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 560000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Telegram",
+    "companyName": "Telegram Messenger LLP",
+    "image": "/images/telegram.png",
+    "description": "Telegram is a cloud-based instant messaging, VoIP, and VoD service. It allows users to send messages and exchange photos, videos, stickers, audio, and files of any type. Telegram also provides end-to-end encrypted video calling, VoIP, and file sharing.\n\nThe app is known for its speed and security, offering a seamless messaging experience. Telegram's unique features include channels, groups, and bots, making it a versatile platform for both personal and professional communication.",
+    "size": 110,
+    "reviews": 450000,
+    "shortReview": "450k",
+    "ratingAvg": 4.7,
+    "downloads": 35000000,
+    "shortDownload": "35M",
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 320000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CapCut",
+    "companyName": "Byte, Inc.",
+    "image": "/images/capcut.png",
+    "description": "CapCut is a free all-in-one video editing app that helps you create incredible videos. It offers a variety of features including cutting, reversing, changing speed, adding music, and applying filters and effects to your videos.\n\nCapCut is designed to be user-friendly, making it accessible for both beginners and experienced video editors. Whether you're creating content for social media or personal projects, CapCut provides the tools you need to bring your vision to life.",
+    "size": 150,
+    "reviews": 600000,
+    "shortReview": "600k",
+    "ratingAvg": 4.6,
+    "downloads": 40000000,
+    "shortDownload": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 230000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Threads",
+    "companyName": "Instagram, Inc.",
+    "image": "/images/threads.jpg",
+    "description": "Threads is a text-based social media app developed by Instagram. It allows users to share short posts, follow friends, and engage in conversations. Threads is designed to be a more intimate and personal platform compared to traditional social media apps.\n\nThe app integrates seamlessly with Instagram, allowing users to share content across both platforms. Threads focuses on fostering meaningful connections and conversations, making it a unique addition to the social media landscape.",
+    "size": 120,
+    "reviews": 500000,
+    "shortReview": "500k",
+    "ratingAvg": 4.5,
+    "downloads": 38000000,
+    "shortDownload": "38M",
+    "ratings": [
+      { "name": "1 star", "count": 3500 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 240000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "image": "/images/snapchat.jpg",
+    "description": "Snapchat is a multimedia messaging app popular for its ephemeral nature. Users can send photos and videos that disappear after being viewed. The app also offers features like Stories, filters, and lenses, allowing users to express themselves creatively.\n\nSnapchat has evolved over the years, introducing new features such as Discover, Spotlight, and Snap Map, to keep users engaged and connected with friends and content from around the world.",
+    "size": 130,
+    "reviews": 550000,
+    "shortReview": "550k",
+    "ratingAvg": 4.4,
+    "downloads": 37000000,
+    "shortDownload": "37M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 220000 }
+    ]
+  }
+]

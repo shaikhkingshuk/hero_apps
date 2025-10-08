@@ -1,15 +1,15 @@
+import { Outlet } from "react-router";
 import "./App.css";
-import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
-import StateSection from "./Components/StateSection/StateSection";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#E9E9E9]">
       <Navbar></Navbar>
-      <Banner></Banner>
-      <StateSection></StateSection>
-    </>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </div>
   );
 }
 

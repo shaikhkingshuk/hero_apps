@@ -29,19 +29,20 @@ const Banner = () => {
             to="https://play.google.com/"
             className="btn bg-[#E9E9E9] text-black border-2 border-[#D2D2D2]"
           >
-            <img src="/play-store-logo.png " className="h-[20px]"></img>Google
-            Play
+            <img src="/images/play-store-logo.png " className="h-[20px]"></img>
+            Google Play
           </Link>
           <Link
             to="https://www.apple.com/app-store/"
             className="btn bg-[#E9E9E9] text-black border-2 border-[#D2D2D2]"
           >
-            <img src="/app-store-logo.png " className="h-[20px]"></img>App Store
+            <img src="/images/app-store-logo.png " className="h-[20px]"></img>
+            App Store
           </Link>
         </div>
       </div>
       <div className=" h-[448px]">
-        <img src="hero.png" className="h-full"></img>
+        <img src="/images/hero.png" className="h-full"></img>
       </div>
     </div>
   );
