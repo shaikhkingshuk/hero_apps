@@ -18,7 +18,7 @@ const TrendingApps = ({ data }) => {
       <div className="flex justify-center">
         <div className="grid grid-cols-4 gap-[20px] max-w-[1440px] w-full ">
           {data.map((val) => (
-            <SingleApp val={val}></SingleApp>
+            <SingleApp key={val.id} val={val}></SingleApp>
           ))}
         </div>
       </div>

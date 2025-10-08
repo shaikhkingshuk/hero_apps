@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import StartingPage from "./Components/StartingPage/StartingPage.jsx";
 import AllApps from "./Components/Apps/AllApps.jsx";
+import AppNotFound from "./Components/Apps/AppNotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         Component: AllApps,
       },
     ],
+  },
+  {
+    path: "/allApps/app_not_found",
+    Component: AppNotFound,
   },
 ]);
 

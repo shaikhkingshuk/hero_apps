@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import SingleApp from "./SingleApp";
 import { useLoaderData } from "react-router";
+import AppNotFound from "./AppNotFound";
 
 const AllApps = () => {
   const data = useLoaderData();
+  const [search, setSearch] = useState("");
+  // console.log(search);
+  const searchText = search.trim().toLocaleLowerCase();
+  // console.log(searchText);
+  const searchProducts = searchText
+    ? data.filter((val) => val.title.toLocaleLowerCase().includes(searchText))
+    : data;
+
+  if (searchText && searchProducts.length === 0) {
+    return <AppNotFound></AppNotFound>;
+  }
   return (
     <div className="flex justify-center mb-[80px]">
       <div className="max-w-[1440px] w-full">
@@ -35,17 +47,21 @@ const AllApps = () => {
                   <path d="m21 21-4.3-4.3"></path>
                 </g>
               </svg>
-              <input type="search" required placeholder="Search" />
+              <input
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="search Apps"
+              />
             </label>
           </div>
           <div className="flex justify-center">
             <div className="grid grid-cols-4 gap-[30px] ">
-              {data.map((val) => (
-                <SingleApp val={val}></SingleApp>
+              {searchProducts.map((val) => (
+                <SingleApp key={val.id} val={val}></SingleApp>
               ))}
             </div>
           </div>
-          {/* border-2 border-amber-500 */}
         </div>
       </div>
     </div>
