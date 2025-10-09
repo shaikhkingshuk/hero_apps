@@ -23,7 +23,6 @@ const addToStoredDB = (id) => {
 const removeFromStore = (id) => {
   const dataList = getInstalledApp();
   const updatedDataList = dataList.filter((val) => val !== id);
-  console.log(updatedDataList);
   const appData = JSON.stringify(updatedDataList);
   localStorage.setItem("installedList", appData);
 };

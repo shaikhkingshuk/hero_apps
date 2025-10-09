@@ -64,7 +64,11 @@ const InstalledApps = () => {
         </div>
         <div className="mb-[80px]">
           {sortedItem().map((data) => (
-            <LocalApps data={data} reloadData={reloadData}></LocalApps>
+            <LocalApps
+              key={data.id}
+              data={data}
+              reloadData={reloadData}
+            ></LocalApps>
           ))}
         </div>
       </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import { removeFromStore } from "../Apps/addToDB";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 const LocalApps = ({ data, reloadData }) => {
   const handleUninstalled = (id) => {
     // removeFromStore(id);
     removeFromStore(id);
-    toast.success("🦄 Wow so easy!");
-    reloadData();
+    toast.success("Wait a second. App is uninstalling...");
+    setTimeout(() => reloadData(), 4000);
   };
   return (
     <div className="bg-white h-[120px] w-full flex flex-row justify-center  rounded-sm mt-[10px] p-[10px] shadow-lg">
@@ -42,6 +42,7 @@ const LocalApps = ({ data, reloadData }) => {
         >
           Uninstall
         </button>
+        <ToastContainer></ToastContainer>
       </div>
     </div>
   );

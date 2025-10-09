@@ -29,7 +29,9 @@ const AllApps = () => {
         </div>
         <div>
           <div className="text-black flex justify-between mb-[16px]">
-            <h1 className="font-semibold text-[24px] ">( ) Apps Found</h1>
+            <h1 className="font-semibold text-[24px] ">
+              ({data.length}) Total Apps Found
+            </h1>
             <label className="input bg-amber-50">
               <svg
                 className="h-[1em] opacity-50"

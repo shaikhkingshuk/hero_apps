@@ -4,6 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Chart from "./Chart";
 import { addToStoredDB, getInstalledApp } from "./addToDB";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const AppDetails = () => {
   const [installedApp, setInstalledApp] = useState(false);
@@ -23,6 +25,7 @@ const AppDetails = () => {
   }, [currentProduct.id]);
 
   const handleInstalled = (id) => {
+    toast.success("App Installed Succesfully...");
     // console.log(id);
     addToStoredDB(id);
     const installedApp = getInstalledApp();
@@ -107,12 +110,7 @@ const AppDetails = () => {
                   {installedApp ? "Installed" : "Install"}({currentProduct.size}
                   MB)
                 </button>
-                {/* <button
-                  onClick={() => handleUninstalled(currentProduct.id)}
-                  className="text-[20px] text-white btn btn-success"
-                >
-                  UnInstall Now ({currentProduct.size}MB)
-                </button> */}
+                <ToastContainer />
               </div>
             </div>
           </div>
