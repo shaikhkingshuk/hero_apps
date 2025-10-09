@@ -15,7 +15,7 @@ const AppNotFound = () => {
           another apps
         </p>
         <Link
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(0)}
           className="border-none btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-[16px] mt-[20px]"
         >
           Go Back

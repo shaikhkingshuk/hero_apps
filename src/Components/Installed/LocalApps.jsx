@@ -1,10 +1,12 @@
 import React from "react";
 import { removeFromStore } from "../Apps/addToDB";
+import { toast } from "react-toastify";
 
 const LocalApps = ({ data, reloadData }) => {
   const handleUninstalled = (id) => {
     // removeFromStore(id);
     removeFromStore(id);
+    toast.success("🦄 Wow so easy!");
     reloadData();
   };
   return (
