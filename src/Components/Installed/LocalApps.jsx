@@ -1,13 +1,15 @@
 import React from "react";
 import { removeFromStore } from "../Apps/addToDB";
 import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router";
 
-const LocalApps = ({ data, reloadData }) => {
+const LocalApps = ({ data }) => {
+  const navigate = useNavigate();
   const handleUninstalled = (id) => {
     // removeFromStore(id);
     removeFromStore(id);
     toast.success("Wait a second. App is uninstalling...");
-    setTimeout(() => reloadData(), 4000);
+    setTimeout(() => navigate(0), 3000);
   };
   return (
     <div className="bg-white h-[120px] w-full flex flex-row justify-center  rounded-sm mt-[10px] p-[10px] shadow-lg">

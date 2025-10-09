@@ -17,16 +17,16 @@ const InstalledApps = () => {
       convertedInstalledApps.includes(app.id)
     );
     setIntalledAppList(myInstalledApps);
-  }, []);
+  }, [data]);
 
-  const reloadData = () => {
-    const storedApps = getInstalledApp();
-    const convertedInstalledApps = storedApps.map((id) => parseInt(id));
-    const myInstalledApps = data.filter((app) =>
-      convertedInstalledApps.includes(app.id)
-    );
-    setIntalledAppList(myInstalledApps);
-  };
+  // const reloadData = () => {
+  //   const storedApps = getInstalledApp();
+  //   const convertedInstalledApps = storedApps.map((id) => parseInt(id));
+  //   const myInstalledApps = data.filter((app) =>
+  //     convertedInstalledApps.includes(app.id)
+  //   );
+  //   setIntalledAppList(myInstalledApps);
+  // };
 
   const sortedItem = () => {
     if (sortOrder === "download-asc") {
@@ -48,7 +48,7 @@ const InstalledApps = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between text-[20px] font-medium">
           <p>{installedAppList.length} Apps Found</p>
           <label className="form-control w-full  max-w-xs">
             <select
@@ -64,11 +64,7 @@ const InstalledApps = () => {
         </div>
         <div className="mb-[80px]">
           {sortedItem().map((data) => (
-            <LocalApps
-              key={data.id}
-              data={data}
-              reloadData={reloadData}
-            ></LocalApps>
+            <LocalApps key={data.id} data={data}></LocalApps>
           ))}
         </div>
       </div>

@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SingleApp from "./SingleApp";
 import { useLoaderData } from "react-router";
 import AppNotFound from "./AppNotFound";
+import Spinner from "../Spinner";
 
 const AllApps = () => {
+  const [loading, setLoading] = useState("");
   const data = useLoaderData();
   const [search, setSearch] = useState("");
   // console.log(search);
@@ -12,6 +14,12 @@ const AllApps = () => {
   const searchProducts = searchText
     ? data.filter((val) => val.title.toLocaleLowerCase().includes(searchText))
     : data;
+
+  useEffect(() => {
+    // simulate a short delay so spinner is visible
+    const timer = setTimeout(() => setLoading(false), 150);
+    return () => clearTimeout(timer);
+  }, [searchProducts]);
 
   if (searchText && searchProducts.length === 0) {
     return <AppNotFound></AppNotFound>;
@@ -52,17 +60,24 @@ const AllApps = () => {
               <input
                 type="search"
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                  setLoading(true);
+                }}
                 placeholder="search Apps"
               />
             </label>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-4 gap-[30px] ">
-              {searchProducts.map((val) => (
-                <SingleApp key={val.id} val={val}></SingleApp>
-              ))}
-            </div>
+            {loading ? (
+              <Spinner /> // spinner shows while searching
+            ) : (
+              <div className="grid grid-cols-4 gap-[30px] ">
+                {searchProducts.map((val) => (
+                  <SingleApp key={val.id} val={val}></SingleApp>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
