@@ -8,6 +8,7 @@ import AllApps from "./Components/Apps/AllApps.jsx";
 import AppNotFound from "./Components/Apps/AppNotFound.jsx";
 import AppDetails from "./Components/Apps/AppDetails.jsx";
 import Chart from "./Components/Apps/Chart.jsx";
+import InstalledApps from "./Components/Installed/InstalledApps.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
     path: "/allApps/app_details/chart",
     loader: () => fetch("/jsonData/fullJsonData.json"),
     Component: Chart,
+  },
+  {
+    path: "/installedapps",
+    loader: () => fetch("/jsonData/fullJsonData.json"),
+    Component: InstalledApps,
   },
 ]);
 

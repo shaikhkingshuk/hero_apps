@@ -51,7 +51,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/installedapps"
                 className={({ isActive }) =>
                   isActive ? "text-[#632EE3] underline" : ""
                 }
@@ -89,7 +89,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/installedapps"
               className={({ isActive }) =>
                 isActive ? "text-[#632EE3] underline" : ""
               }

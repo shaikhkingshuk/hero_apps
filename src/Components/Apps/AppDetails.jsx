@@ -3,12 +3,19 @@ import { useLoaderData, useParams } from "react-router";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Chart from "./Chart";
+import { addToStoredDB } from "./addToDB";
 
 const AppDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const currentProduct = data.find((val) => String(val.id) === id);
-  console.log(currentProduct);
+  // console.log(currentProduct);
+
+  const handleInstalled = (id) => {
+    // console.log(id);
+    addToStoredDB(id);
+  };
+
   return (
     <div className="bg-[#E9E9E9]">
       <Navbar></Navbar>
@@ -62,10 +69,11 @@ const AppDetails = () => {
                 </div>
               </div>
               <div className=" font-semibold ">
-                <button className="btn btn-success">
-                  <p className="text-[20px] text-white">
-                    Install Now ({currentProduct.size}MB)
-                  </p>
+                <button
+                  onClick={() => handleInstalled(currentProduct.id)}
+                  className="text-[20px] text-white btn btn-success"
+                >
+                  Install Now ({currentProduct.size}MB)
                 </button>
               </div>
             </div>
