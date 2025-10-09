@@ -17,6 +17,16 @@ const InstalledApps = () => {
     );
     setIntalledAppList(myInstalledApps);
   }, []);
+
+  const reloadData = () => {
+    const storedApps = getInstalledApp();
+    const convertedInstalledApps = storedApps.map((id) => parseInt(id));
+    const myInstalledApps = data.filter((app) =>
+      convertedInstalledApps.includes(app.id)
+    );
+    setIntalledAppList(myInstalledApps);
+  };
+
   return (
     <div className="bg-[#E9E9E9]  flex flex-col items-center">
       <Navbar></Navbar>
@@ -29,7 +39,7 @@ const InstalledApps = () => {
         </div>
         <div className="mb-[80px]">
           {installedAppList.map((data) => (
-            <LocalApps data={data}></LocalApps>
+            <LocalApps data={data} reloadData={reloadData}></LocalApps>
           ))}
         </div>
       </div>

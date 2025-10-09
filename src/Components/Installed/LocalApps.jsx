@@ -1,6 +1,12 @@
 import React from "react";
+import { removeFromStore } from "../Apps/addToDB";
 
-const LocalApps = ({ data }) => {
+const LocalApps = ({ data, reloadData }) => {
+  const handleUninstalled = (id) => {
+    // removeFromStore(id);
+    removeFromStore(id);
+    reloadData();
+  };
   return (
     <div className="bg-white h-[120px] w-full flex flex-row justify-center  rounded-sm mt-[10px] p-[10px] shadow-lg">
       <div className="w-1/11">
@@ -28,7 +34,12 @@ const LocalApps = ({ data }) => {
         </div>
       </div>
       <div className="w-1/11 flex justify-center items-center">
-        <button className="btn btn-success">Uninstall</button>
+        <button
+          className="btn btn-success"
+          onClick={() => handleUninstalled(data.id)}
+        >
+          Uninstall
+        </button>
       </div>
     </div>
   );

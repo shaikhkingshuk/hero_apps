@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Chart from "./Chart";
-import { addToStoredDB } from "./addToDB";
+import { addToStoredDB, getInstalledApp } from "./addToDB";
 
 const AppDetails = () => {
+  const [installedApp, setInstalledApp] = useState(false);
   const data = useLoaderData();
   const { id } = useParams();
   const currentProduct = data.find((val) => String(val.id) === id);
   // console.log(currentProduct);
 
+  useEffect(() => {
+    const installedApp = getInstalledApp();
+    // console.log()
+    if (installedApp.includes(currentProduct.id)) {
+      setInstalledApp(true);
+    } else {
+      setInstalledApp(false);
+    }
+  }, [currentProduct.id]);
+
   const handleInstalled = (id) => {
     // console.log(id);
     addToStoredDB(id);
+    const installedApp = getInstalledApp();
+    // console.log(installedApp);
+    // console.log(currentProduct.id);
+    if (installedApp.includes(currentProduct.id)) {
+      setInstalledApp(true);
+      // console.log("aaaaaaaaa");
+    } else {
+      setInstalledApp(false);
+    }
   };
+
+  // const handleUninstalled = (id) => {
+  //   removeFromStore(id);
+  // };
 
   return (
     <div className="bg-[#E9E9E9]">
@@ -22,7 +46,7 @@ const AppDetails = () => {
       <div className="flex justify-center bg-[#E9E9E9] text-black mt-[80px]">
         <div className="bg-[#E9E9E9] text-black max-w-[1440px] w-full">
           <div className="h-[341px] flex gap-[90px]">
-            <div className="">
+            <div>
               <img
                 src={currentProduct.image}
                 className="h-full w-full"
@@ -70,11 +94,25 @@ const AppDetails = () => {
               </div>
               <div className=" font-semibold ">
                 <button
+                  disabled={installedApp}
                   onClick={() => handleInstalled(currentProduct.id)}
+                  className={`text-[20px] text-white p-[10px] rounded-sm
+    ${
+      installedApp
+        ? "bg-gray-600 cursor-not-allowed"
+        : "bg-green-600 hover:bg-green-700"
+    }
+  `}
+                >
+                  {installedApp ? "Installed" : "Install"}({currentProduct.size}
+                  MB)
+                </button>
+                {/* <button
+                  onClick={() => handleUninstalled(currentProduct.id)}
                   className="text-[20px] text-white btn btn-success"
                 >
-                  Install Now ({currentProduct.size}MB)
-                </button>
+                  UnInstall Now ({currentProduct.size}MB)
+                </button> */}
               </div>
             </div>
           </div>

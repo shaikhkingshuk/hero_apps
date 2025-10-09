@@ -11,7 +11,7 @@ const getInstalledApp = () => {
 const addToStoredDB = (id) => {
   const storedAllApps = getInstalledApp();
   if (storedAllApps.includes(id)) {
-    alert("fasdfadfafas");
+    // alert("fasdfadfafas");
   } else {
     storedAllApps.push(id);
     // console.log(storedAllApps);
@@ -19,4 +19,13 @@ const addToStoredDB = (id) => {
     localStorage.setItem("installedList", appData);
   }
 };
-export { addToStoredDB, getInstalledApp };
+
+const removeFromStore = (id) => {
+  const dataList = getInstalledApp();
+  const updatedDataList = dataList.filter((val) => val !== id);
+  console.log(updatedDataList);
+  const appData = JSON.stringify(updatedDataList);
+  localStorage.setItem("installedList", appData);
+};
+
+export { addToStoredDB, getInstalledApp, removeFromStore };
