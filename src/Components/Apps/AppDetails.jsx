@@ -46,51 +46,53 @@ const AppDetails = () => {
   return (
     <div className="bg-[#E9E9E9]">
       <Navbar></Navbar>
-      <div className="flex justify-center bg-[#E9E9E9] text-black mt-[80px]">
+      <div className="flex justify-center bg-[#E9E9E9] text-black mt-[40px] md:mt-[80px]">
         <div className="bg-[#E9E9E9] text-black max-w-[1440px] w-full">
-          <div className="h-[341px] flex gap-[90px]">
-            <div>
+          <div className="h-auto flex flex-col md:flex-row mb-[60px] md:mb-[0px] md:gap-[90px] ">
+            <div className=" flex justify-center lg:justify-start p-[10px]">
               <img
                 src={currentProduct.image}
-                className="h-full w-full"
+                className="h-full w-[300px] md:w-[400px]"
                 alt=""
               />
             </div>
-            <div className="flex flex-col justify-between   ">
+            <div className="flex flex-col justify-between md:items-start items-center  mt-[30px] md:mt-[0px] p-[10px] ">
               <div className=" border-b-2 border-gray-300 ">
                 <h1 className="text-[32px] font-bold">
                   App: {currentProduct.title}
                 </h1>
                 <p className="font-semibold text-[20px] text-[#627382]">
                   Developed by
-                  <span className="text-[#632EE3]">productive.io</span>
+                  <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
+                    productive.io
+                  </span>
                 </p>
               </div>
-              <div className="flex gap-[50px] ">
-                <div className="h-[120px] w-[150px] flex flex-col justify-between items-start">
+              <div className="flex flex-row  my-[20px] ">
+                <div className="p-[10px]  flex flex-col justify-between items-start ">
                   <img
                     src="/images/icon-downloads.png"
                     className="h-[40px]"
                   ></img>
                   <p>Downloads</p>
-                  <p className="font-bold text-[40px]">
+                  <p className="md:font-bold font-semibold text-[40px]">
                     {currentProduct.shortDownload}
                   </p>
                 </div>
-                <div className="h-[120px] w-[150px] flex flex-col justify-between items-start">
+                <div className="p-[10px] ml-[10px]  flex flex-col justify-between items-start ">
                   <img
                     src="/images/icon-ratings.png"
                     className="h-[40px]"
                   ></img>
                   <p>Average Ratings</p>
-                  <p className="font-bold text-[40px]">
+                  <p className="md:font-bold font-semibold text-[40px]">
                     {currentProduct.ratingAvg}
                   </p>
                 </div>
-                <div className="h-[120px] w-[150px] flex flex-col justify-between items-start ">
+                <div className="p-[10px] ml-[10px] flex flex-col justify-between items-start ">
                   <img src="/images/icon-review.png" className="h-[40px]"></img>
                   <p>Total Reviews</p>
-                  <p className="font-bold text-[40px]">
+                  <p className="md:font-bold font-semibold text-[40px]">
                     {currentProduct.shortReview}
                   </p>
                 </div>

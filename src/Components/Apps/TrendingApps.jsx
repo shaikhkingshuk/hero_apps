@@ -7,16 +7,18 @@ const TrendingApps = ({ data }) => {
     <div>
       <div className="flex flex-col items-center mt-[80px] mb-[40px]">
         <div className="mb-[16px]  flex justify-center">
-          <h1 className="text-[48px] font-bold text-black">Trending Apps</h1>
+          <h1 className="text-[43px] md:text-[48px] font-bold text-black text-center">
+            Trending Apps
+          </h1>
         </div>
         <div>
-          <p className="text-[#627382] text-[20px] flex justify-center">
+          <p className="text-[#627382] text-[20px] flex justify-center text-center">
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-4 gap-[20px] max-w-[1440px] w-full ">
+      <div className="flex justify-center p-[10px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] max-w-[1440px] w-full ">
           {data.map((val) => (
             <SingleApp key={val.id} val={val}></SingleApp>
           ))}
